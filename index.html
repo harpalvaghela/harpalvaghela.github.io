@@ -1,414 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – Harpalsinh Vaghela</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harpalsinh Vaghela Portfolio</title>
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Global styles reset -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1 class="site-title">Harpalsinh Vaghela</h1>
-            <nav class="site-nav">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#timeline">Timeline</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+
+<!-- About Me Section -->
+<style>
+  .about-me-section {
+    background-color: #0C0C0C;
+    padding: 6rem 2rem;
+    border: 2px solid #333;
+    border-radius: 30px;
+    width: 100%;
+    margin: auto;
+  }
+  .about-me-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+  .text-col { flex: 0 0 55%; }
+  .image-col { flex: 0 0 45%; text-align: right; padding:60px; }
+  .section-label {
+    font-size: 0.9rem;
+    color: #A9A9A9;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+  .heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: #fff;
+    line-height: 1.3;
+  }
+  .heading .highlight { color: #C7FF00; }
+  .intro {
+    font-size: 1rem;
+    color: #CCCCCC;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  .icon-lists {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .icon-list { list-style: none; margin: 0; padding: 0; }
+  .icon-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 0.7rem;
+  }
+  .tick { color: #C7FF00; margin-right: 0.5rem; font-weight: bold; }
+  .contact-cards { display: flex; flex-wrap: wrap; gap: 2rem; margin-left: 0; }
+  .contact-card {
+    background-color: #1A1A1A;
+    padding: 1.25rem 1.5rem;
+    justify-content: flex-start;
+    display: inline-block;
+    border-radius: 8px;
+  }
+  .contact-label { color: #A9A9A9; font-size: 0.85rem; margin-bottom: 0.25rem; display: block; }
+  .contact-value { color: #fff; font-size: 1rem; text-decoration: none; }
+  .contact-value .fa { margin-right: 0.5rem; color: #C7FF00; }
+  .about-photo { width: 100%; max-width: 500px; border-radius: 50% !important; }
+  @media (max-width: 992px) {
+    .about-me-container { flex-direction: column; text-align: center; }
+    .contact-cards { margin-left: 0; justify-content: center; }
+    .image-col { margin-top: 2rem; }
+  }
+</style>
+<section class="about-me-section">
+  <div class="about-me-container">
+    <div class="text-col">
+      <span class="section-label">About Me</span>
+      <h2 class="heading">
+        <span style="color: #ffffff;">Innovative</span>
+        <span class="highlight">Data Engineer</span>
+        <span style="color: #ffffff;">with a Strategic Vision</span>
+      </h2>
+      <p class="intro">
+        I am a passionate Data Engineer, designing scalable data pipelines and modern lakehouse architectures that convert raw data into actionable business value and intelligent decision making.
+      </p>
+      <div class="icon-lists">
+        <ul class="icon-list">
+          <li class="icon-list-item"><span class="tick">✓</span> Lakehouse Architecture Design</li>
+          <li class="icon-list-item"><span class="tick">✓</span> Databricks Development</li>
+        </ul>
+        <ul class="icon-list">
+          <li class="icon-list-item"><span class="tick">✓</span> Azure Synapse &amp; ADF Integration</li>
+          <li class="icon-list-item"><span class="tick">✓</span> ETL Development</li>
+        </ul>
+      </div>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <span class="contact-label">Email Me</span>
+          <a href="mailto:harpalvaghela990@gmail.com" class="contact-value">
+            <i class="fa fa-envelope"></i> harpalvaghela990@gmail.com
+          </a>
         </div>
-    </header>
-    
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-text">
-                    <p class="hero-intro">Hello, I’m</p>
-                    <h1 class="hero-name">Harpalsinh Vaghela</h1>
-                    <h2 class="hero-role">Data Engineer</h2>
-                    <p class="hero-description">
-                        I’m a Data Engineer with hands‑on experience in building end‑to‑end data pipelines and
-                        lakehouse architectures using Azure Data Factory, Synapse Analytics and Databricks. From
-                        ingestion to transformation to insights, I specialize in making data work smarter for
-                        businesses.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-light">Let’s Connect</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://github.com/harpalvaghela/harpalvaghela/blob/main/HarpalVaghela_Website1.png?raw=true" alt="Harpalsinh Vaghela" class="about-photo"/>
-                </div>
-            </div>
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number">4+</span>
-                    <span class="stat-label">Years of Experience</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Projects Delivered</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Client Satisfaction</span>
-                </div>
-            </div>
-        </section>
-        <!-- About Section -->
-        <section id="about" class="about-me-section">
-          <div class="about-me-container">
-            <!-- Text Content -->
-            <div class="text-col">
-              <span class="section-label">About Me</span>
-              <h2 class="heading">
-                <span>Innovative</span>
-                <span class="highlight">Data Engineer</span>
-                <span>with a Strategic Vision</span>
-              </h2>
-              <p class="intro">
-                I am a passionate Data Engineer, designing scalable data pipelines and modern lakehouse architectures
-                that convert raw data into actionable business value and intelligent decision making.
-              </p>
-              <div class="icon-lists">
-                <ul class="icon-list">
-                  <li class="icon-list-item"><span class="tick">✓</span> Lakehouse Architecture Design</li>
-                  <li class="icon-list-item"><span class="tick">✓</span> Databricks Development</li>
-                </ul>
-                <ul class="icon-list">
-                  <li class="icon-list-item"><span class="tick">✓</span> Azure Synapse &amp; ADF Integration</li>
-                  <li class="icon-list-item"><span class="tick">✓</span> ETL Development</li>
-                </ul>
-              </div>
-              <div class="contact-cards">
-                <div class="contact-card">
-                  <span class="contact-label">Email Me</span>
-                  <a href="mailto:harpalvaghela990@gmail.com" class="contact-value">
-                    <i class="fa fa-envelope"></i> harpalvaghela990@gmail.com
-                  </a>
-                </div>
-                <div class="contact-card">
-                  <span class="contact-label">Book a Call</span>
-                  <a href="https://topmate.io/harpal_vaghela" target="_blank" class="contact-value">
-                    <i class="fa fa-phone"></i> topmate.io/harpal_vaghela
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Image -->
-            <div class="image-col">
-              <img src="https://github.com/harpalvaghela/harpalvaghela/blob/main/HarpalVaghela_Website1.png?raw=true"
-                   alt="Harpalsinh Vaghela" class="about-photo">
-            </div>
-          </div>
-        </section>
-
-        <!-- Timeline Section -->
-        <section id="timeline" class="timeline-section fade-in">
-            <div class="timeline-inner">
-
-                <!-- Education Column -->
-                <div class="timeline-column">
-                    <div class="timeline-title">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        Education
-                    </div>
-
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2023 – 2024</div>
-                        <h4>Durham College, Canada</h4>
-                        <p>AI Analysis, Design &amp; Implementation</p>
-                    </div>
-
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2022 – 2023</div>
-                        <h4>Durham College, Canada</h4>
-                        <p>Data Analytics for Business Decision Making</p>
-                    </div>
-
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2015 – 2019</div>
-                        <h4>GTU, India</h4>
-                        <p>B.E. Computer Engineering</p>
-                    </div>
-                </div>
-
-                <!-- Experience Column -->
-                <div class="timeline-column">
-                    <div class="timeline-title">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        Experience
-                    </div>
-
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2024 – Present</div>
-                        <h4>Data Engineer</h4>
-                        <p>Scotiabank, Canada</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2022 – 2022</div>
-                        <h4>MS Associate System Analyst</h4>
-                        <p>Altera Digital Health, India</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2021 – 2022</div>
-                        <h4>Data Engineer</h4>
-                        <p>Thoughtpearls Softwares, India</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2019 – 2021</div>
-                        <h4>Jr. Data Engineer</h4>
-                        <p>P5Infosoft, India</p>
-                    </div>
-                </div>
-
-                <!-- Leadership Column -->
-                <div class="timeline-column">
-                    <div class="timeline-title">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        Leadership
-                    </div>
-
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2020 – Present</div>
-                        <h4>Founder</h4>
-                        <p>The Executors’ Club</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2015 – 2019</div>
-                        <h4>ROBOCON, Team Member</h4>
-                        <p>Robotics Club, VIER</p>
-                    </div>
-                    <div class="timeline-box">
-                        <div class="timeline-circle"></div>
-                        <div class="timeline-date">2020 – 2021</div>
-                        <h4>Social Media, Director</h4>
-                        <p>JCI VSN, Vadodara</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section fade-in">
-            <h2 style="text-align:center; font-size:28px; font-weight:700; margin:0 0 0px 0; padding:20px;">
-                <span>My </span>
-                <span class="highlight" style="color: var(--accent);">Skill Set</span>
-            </h2>
-            <div class="skills-container">
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul class="skill-list">
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> Python</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg"> PySpark</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"> Java</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"> Kotlin</li>
-                    </ul>
-                </div>
-                <!-- Databases -->
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <ul class="skill-list">
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"> Azure SQL DB</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> MySQL</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"> SQL Server</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"> PostgreSQL</li>
-                    </ul>
-                </div>
-                <!-- Cloud Tools -->
-                <div class="skill-category">
-                    <h3>Cloud Tools</h3>
-                    <ul class="skill-list">
-                        <li><i class="fa-solid fa-database"></i> Azure Data Factory</li>
-                        <li><i class="fa-solid fa-code-branch"></i> Azure Synapse Analytics</li>
-                        <li><i class="fa-brands fa-microsoft"></i> Microsoft Fabric</li>
-                        <li><i class="fa-solid fa-cube"></i> Databricks</li>
-                        <li><i class="fa-solid fa-snowflake"></i> Snowflake</li>
-                    </ul>
-                </div>
-                <!-- Other Tech Tools -->
-                <div class="skill-category">
-                    <h3>Other Tech Skills</h3>
-                    <ul class="skill-list">
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"> Git</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"> GitHub</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"> BitBucket</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"> Jira</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg"> Confluence</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"> VSCode</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="project-section fade-in">
-            <div style="max-width:1200px; margin:0 auto; padding:0 30px;">
-                <h2 style="font-size:36px; font-weight:500; margin-bottom:60px; text-align:center;">
-                    Explore My Popular <span class="highlight" style="color: var(--accent);">Projects</span>
-                </h2>
-                <!-- Project 1 -->
-                <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px;">
-                    <div style="flex:1; min-width:350px;">
-                        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-1/main/ETLWorkflow.png" alt="Data Project" style="width:100%; border-radius:12px;">
-                    </div>
-                    <div style="flex:1; min-width:350px;">
-                        <p style="color: var(--text-secondary); font-size:14px; margin-bottom:10px;">Data Engineering</p>
-                        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Data Pipeline for Customer Account Analysis</h3>
-                        <p style="color: var(--text-secondary); font-size:16px; line-height:1.6; margin-bottom:25px;">
-                            Built a scalable Azure Data Factory pipeline to ingest, clean, and transform customer account data across Bronze–Silver–Gold layers in ADLS and Azure SQL for automated, analytics-ready Power BI reporting.
-                        </p>
-                        <a href="https://github.com/harpalvaghela/DE-Project-1" target="_blank" class="project-arrow">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px;">
-                    <div style="flex:1; min-width:350px;">
-                        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-2/main/ETLWorkflow.png" alt="Project 2" style="width:100%; border-radius:12px;">
-                    </div>
-                    <div style="flex:1; min-width:350px;">
-                        <p style="color: var(--text-secondary); font-size:14px; margin-bottom:10px;">Data Analytics</p>
-                        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Transactions and Loan Data Pipeline</h3>
-                        <p style="color: var(--text-secondary); font-size:16px; line-height:1.6; margin-bottom:25px;">
-                            Built a scalable Azure Databricks + Delta Lake pipeline for daily transactional &amp; loan data processing with SCD logic and real-time analytics via Power BI.
-                        </p>
-                        <a href="https://github.com/harpalvaghela/DE-Project-2" target="_blank" class="project-arrow">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap;">
-                    <div style="flex:1; min-width:350px;">
-                        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-04/main/ETL_Flow.png" alt="Project 3" style="width:100%; border-radius:12px;">
-                    </div>
-                    <div style="flex:1; min-width:350px;">
-                        <p style="color: var(--text-secondary); font-size:14px; margin-bottom:10px;">Microsoft Fabric</p>
-                        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Fabric Data Pipeline</h3>
-                        <p style="color: var(--text-secondary); font-size:16px; line-height:1.6; margin-bottom:25px;">
-                            Built a Microsoft Fabric pipeline to incrementally ingest on-prem data, apply SCD Type 1 transformations, model sales data into Lakehouse fact/dimension tables, and deliver Power BI-ready insights with automated email notifications.
-                        </p>
-                        <a href="https://github.com/harpalvaghela/DE-Project-04" target="_blank" class="project-arrow">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blogs Section -->
-        <section id="blogs" class="blog-section fade-in">
-            <div class="blog-header">
-                <div class="icon-wrapper">
-                    <i class="fa-brands fa-medium"></i>
-                </div>
-                <div class="blog-title">My Blogs</div>
-            </div>
-            <p class="blog-description">
-                Explore my latest blogs by clicking the button below and dive into a range of topics on my Medium account. Stay informed, inspired, and connected!
-            </p>
-            <a href="https://medium.com/@harpalvaghela" target="_blank" class="btn-primary">Read My Blogs</a>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="certification-section fade-in">
-            <div class="certification-header">
-                <div class="icon-wrapper">
-                    <!-- icon using inline svg for certification -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 
-        448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 
-        26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 
-        9.58-19.5 0-37.82-7.59-51.61-21.37zM263 
-        340c15.28-15.55 17.03-14.21 38.79-20.14 
-        13.89-3.79 24.75-14.84 28.47-28.98 
-        7.48-28.4 5.54-24.97 25.95-45.75 
-        10.17-10.35 14.14-25.44 10.42-39.58 
-        -7.47-28.38-7.48-24.42 0-52.83 
-        3.72-14.14-.25-29.23-10.42-39.58 
-        -20.41-20.78-18.47-17.36-25.95-45.75 
-        -3.72-14.14-14.58-25.19-28.47-28.98 
-        -27.88-7.61-24.52-5.62-44.95-26.41 
-        -10.17-10.35-25-14.4-38.89-10.61 
-        -27.87 7.6-23.98 7.61-51.9 0 
-        -13.89-3.79-28.72.25-38.89 10.61 
-        -20.41 20.78-17.05 18.8-44.94 26.41 
-        -13.89 3.79-24.75 14.84-28.47 28.98 
-        -7.47 28.39-5.54 24.97-25.95 45.75 
-        -10.17 10.35-14.15 25.44-10.42 39.58 
-        7.47 28.36 7.48 24.4 0 52.82 
-        -3.72 14.14.25 29.23 10.42 39.59 
-        20.41 20.78 18.47 17.35 25.95 45.75 
-        3.72 14.14 14.58 25.19 28.47 28.98 
-        C104.6 325.96 106.27 325 121 340 
-        c13.23 13.47 33.84 15.88 49.74 5.82 
-        a39.676 39.676 0 0 1 42.53 0 
-        c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 
-        175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 
-        96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z" />
-                    </svg>
-                </div>
-                <div class="certification-title">My Certifications</div>
-            </div>
-            <div class="certification-list">
-                <div class="certification-item">Microsoft Certified: Fabric Data Engineer Associate</div>
-                <div class="certification-item">Databricks Certified Data Engineer Associate</div>
-                <div class="certification-item">Microsoft Certified: Fabric Analytics Engineer Associate</div>
-                <div class="certification-item">NLP Practitioner (Nuviscoach)</div>
-                <div class="certification-item">Certified Trainer, IMPT Solution, India</div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section fade-in">
-            <div class="contact-container">
-                <div class="contact-title">Let’s Talk</div>
-                <p class="contact-desc">
-                    Let’s connect and explore how I can help you turn raw data into impactful insights through scalable pipelines and modern data architecture.
-                </p>
-                <a href="https://topmate.io/harpal_vaghela" target="_blank" class="contact-btn">
-                    <span>Schedule a Call</span>
-                    <i class="fa-solid fa-phone"></i>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>© <span id="year"></span> Harpalsinh Vaghela. All rights reserved.</p>
+        <div class="contact-card">
+          <span class="contact-label">Book a Call</span>
+          <a href="https://topmate.io/harpal_vaghela" class="contact-value">
+            <i class="fa fa-phone"></i> topmate.io/harpal_vaghela
+          </a>
         </div>
-        <script>
-            // Automatically update the year in the footer
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
-    </footer>
+      </div>
+    </div>
+    <div class="image-col">
+      <img src="https://github.com/harpalvaghela/harpalvaghela/blob/main/HarpalVaghela_Website1.png?raw=true" alt="About Me Photo" class="about-photo">
+    </div>
+  </div>
+</section>
+
+<!-- Timeline, Skills, Projects, Blogs, Certifications Section -->
+<style>
+  .timeline-section {
+    padding: 60px 20px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .timeline-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .timeline-column { flex: 1; min-width: 320px; }
+  .timeline-title { display: flex; align-items: center; font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 25px; }
+  .timeline-title .icon-wrapper {
+    width: 48px; height: 48px; background-color: #0a0a0a; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; box-shadow: 0 0 0 2px #111;
+  }
+  .timeline-title .icon-wrapper i { color: #ccff00; font-size: 20px; }
+  .timeline-box { position: relative; padding-left: 30px; border-left: 2px solid #333; margin-bottom: 30px; }
+  .timeline-circle { position: absolute; left: -12px; top: 5px; width: 20px; height: 20px; border-radius: 50%; background-color: #ccff00; border: 4px solid #333; }
+  .timeline-box h4 { color: #fff; font-size: 18px; font-weight: bold; margin: 0 0 5px; }
+  .timeline-box p { margin: 0; color: #aaa; }
+  .timeline-date { font-size: 14px; color: #888; margin-bottom: 5px; }
+
+  /* Skills Section */
+  .skills-section { background:#1F1F1F; padding:20px 20px; border-radius:20px; max-width:1200px; margin:0 auto; color:#fff; }
+  .skills-section h2 { text-align:center; font-size:28px; font-weight:700; margin:0 0 0px 0; padding:20px; background:#1F1F1F; border-radius:20px; }
+  .skills-section h2 span:nth-child(1) { color:#ffffff; }
+  .skills-section h2 span:nth-child(2) { color:#ccff00; }
+  .skills-container { display:flex; flex-wrap:wrap; gap:40px; justify-content:center; }
+  .skill-category { margin-bottom:20px; }
+  .skill-category h3 { font-size:22px; margin-bottom:15px; color:#fff; text-align:center; }
+  .skill-list { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:15px; align-items:center; justify-content:center; }
+  .skill-list li { display:flex; align-items:center; background:#2a2a2a; padding:10px 15px; border-radius:8px; }
+  .skill-list img { width:24px; height:24px; margin-right:10px; }
+
+  /* Blog Section */
+  .blog-section {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .blog-header { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; }
+  .blog-header .icon-wrapper {
+    width: 48px; height: 48px; background-color: #0a0a0a; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; box-shadow: 0 0 0 2px #111;
+  }
+  .blog-header .icon-wrapper i { color: #ccff00; font-size: 20px; }
+  .blog-title { font-size: 28px; font-weight: 700; color: #fff; }
+  .blog-description { font-size: 16px; margin-bottom: 25px; color: #ccc; max-width: 700px; margin-left: auto; margin-right: auto; }
+  .btn-primary {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background: #C7FF00;
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.4s ease;
+  }
+  .btn-primary::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: all 0.5s ease;
+  }
+  .btn-primary:hover::before { left: 100%; }
+  .btn-primary:hover { transform: translateY(-4px); }
+
+  /* Projects Section */
+  .project-section {
+    background:#121312;
+    padding:80px 0;
+    color:#fff;
+    text-align:left;
+    border: 2px solid #333;
+    border-radius: 30px;
+    width: 100%;
+    margin: auto;
+  }
+  .project-arrow {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    border: 2px solid #222;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .project-arrow:hover {
+    background: #ccff00;
+    color: #000;
+    border-color: #ccff00;
+    transform: scale(1.08);
+  }
+
+  /* Certification Section */
+  .certification-section {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 20px;
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+  .certification-header { display: flex; align-items: center; justify-content: center; margin-bottom: 40px; }
+  .certification-header .icon-wrapper {
+    width: 48px; height: 48px; background-color: #0a0a0a; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; box-shadow: 0 0 0 2px #111;
+  }
+  .certification-header .icon-wrapper svg {
+    fill: #ccff00; width: 20px; height: 20px;
+  }
+  .certification-title { font-size: 28px; font-weight: 700; color: #fff; }
+  .certification-list { display: flex; flex-direction: column; gap: 20px; align-items: center; }
+  .certification-item {
+    background-color: #2b2b2b;
+    padding: 18px 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #eee;
+    font-size: 18px;
+    font-weight: 500;
+    border-left: 4px solid #ccff00;
+    transition: transform 0.2s ease;
+  }
+  .certification-item:hover { transform: scale(1.02); background-color: #333; }
+
+  /* Contact Section */
+  .contact-section {
+    background-color: #121312;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  .contact-title { font-size: 48px; font-weight: 700; margin-bottom: 20px; color: #ccff00; }
+  .contact-desc { font-size: 18px; max-width: 700px; margin: 0 auto 40px; line-height: 1.6; color: #ccc; }
+  .contact-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 40px;
+    background-color: #ccff00;
+    color: #0a0a0a;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .contact-btn span { transition: 0.3s ease; }
+  .contact-btn i { font-size: 1.4rem; color: #000 !important; opacity: 0; position: absolute; transition: all 0.3s ease; }
+  .contact-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: #ccff00;
+    transition: width 0.28s ease-in-out;
+  }
+  .contact-btn:hover::after { width: 100%; }
+  .contact-btn:hover span { opacity: 0; transform: translateY(-8px); }
+  .contact-btn:hover i { opacity: 1; transform: translateY(0); }
+  .divider-line {
+    border: none;
+    height: 1px;
+    background-color: #ffffff !important;
+    opacity: 0.2;
+    margin: 40px auto 20px;
+    width: 100%;
+  }
+  .footer {
+    background-color: #111111 !important;
+    color: #ffffff !important;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 20px;
+    font-weight: 500;
+  }
+</style>
+
+<div class="timeline-section">
+  <div class="timeline-inner">
+    <!-- Education -->
+    <div class="timeline-column">
+      <div class="timeline-title">
+        <div class="icon-wrapper"><i class="fas fa-graduation-cap"></i></div>
+        Education
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2023 – 2024</div>
+        <h4>Durham College, Canada</h4>
+        <p>AI Analysis, Design &amp; Implementationn</p>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2022 – 2023</div>
+        <h4>Durham College, Canada</h4>
+        <p>Data Analytics for Business Decision Making</p>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2015 – 2019</div>
+        <h4>GTU, India</h4>
+        <p>B.E. Computer Engineering</p>
+      </div>
+    </div>
+    <!-- Experience -->
+    <div class="timeline-column">
+      <div class="timeline-title">
+        <div class="icon-wrapper"><i class="fas fa-briefcase"></i></div>
+        Experience
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2024 – 2025</div>
+        <h4>Data Engineer</h4>
+        <p>Scotiabank, Canada</p>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2022 – 2022</div>
+        <h4>MS Associate System Analyst</h4>
+        <p>Altera Digital Health, India</p>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2021 – 2022</div>
+        <h4>Data Engineer</h4>
+        <p>Thoughtpearls Softwares, India</p>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2019 – 2021</div>
+        <h4>Jr. Data Engineer</h4>
+        <p>P5Infosoft, India</p>
+      </div>
+    </div>
+    <!-- Leadership -->
+    <div class="timeline-column">
+      <div class="timeline-title">
+        <div class="icon-wrapper"><i class="fas fa-users"></i></div>
+        Leadership
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2020 – Present</div>
+        <h4>Founder</h4>
+        <p>The Executors’ Club</p>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2015-2019</div>
+        <h4>ROBOCON, Team Member</h4>
+        <p>Robotics Club, VIER</p>
+      </div>
+      <div class="timeline-box">
+        <div class="timeline-circle"></div>
+        <div class="timeline-date">2020 – 2021</div>
+        <h4>Social Media, Director</h4>
+        <p>JCI VSN, Vadodara</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Skills Section HTML -->
+<section class="skills-section">
+  <h2>
+    <span>My </span><span>Skill Set</span>
+  </h2>
+  <div class="skills-container">
+    <div class="skill-category">
+      <h3>Programming Languages</h3>
+      <ul class="skill-list">
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> Python</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg"> PySpark</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"> Java</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"> Kotlin</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Databases</h3>
+      <ul class="skill-list">
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"> Azure SQL DB</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> MySQL</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"> SQL Server</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"> PostgreSQL</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Cloud Tools</h3>
+      <ul class="skill-list">
+        <li><img src="https://code.benco.io/icon-collection/azure-icons/Data-Factory.svg"> Azure Data Factory</li>
+        <li style="display:flex;align-items:center;gap:5px;">
+          <img src="https://code.benco.io/icon-collection/azure-icons/Azure-Synapse-Analytics.svg"> Azure Synapse Analytics
+        </li>
+        <li><img src="https://static.wikia.nocookie.net/logopedia/images/a/aa/Microsoft_Fabric_2023.svg"> Microsoft Fabric</li>
+        <li><img src="https://cdn.brandfetch.io/idSUrLOWbH/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"> Databricks</li>
+        <li><img src="https://registry.npmmirror.com/@lobehub/icons-static-png/1.74.0/files/light/snowflake-color.png"> Snowflake</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Other Tech Skills</h3>
+      <ul class="skill-list">
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"> Git</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"> GitHub</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"> BitBucket</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"> Jira</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg"> Confluence</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"> VSCode</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Section HTML -->
+<div class="blog-section">
+  <div class="blog-header">
+    <div class="icon-wrapper"><i class="fa-brands fa-medium"></i></div>
+    <div class="blog-title">My Blogs</div>
+  </div>
+  <p class="blog-description">
+    Explore my latest blogs by clicking the button below and dive into a range of topics on my Medium account. Stay informed, inspired, and connected!
+  </p>
+  <a href="https://medium.com/@harpalvaghela" target="_blank" class="btn-primary">Read My Blogs</a>
+</div>
+
+<!-- Projects Section HTML -->
+<section class="project-section">
+  <div style="max-width:1200px; margin:0 auto; padding:0 30px;">
+    <h2 style="font-size:36px; font-weight:500; margin-bottom:60px; text-align:center; color:#fff;">
+      Explore My Popular <span style="color:#ccff00;">Projects</span>
+    </h2>
+    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px;">
+      <div style="flex:1; min-width:350px;">
+        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-1/main/ETLWorkflow.png" alt="Data Project" style="width:100%; border-radius:12px;">
+      </div>
+      <div style="flex:1; min-width:350px;">
+        <p style="color:#b3b3b3; font-size:14px; margin-bottom:10px;">Data Engineering</p>
+        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Data Pipeline for Customer Account Analysis</h3>
+        <p style="color:#ccc; font-size:16px; line-height:1.6; margin-bottom:25px;">
+          Built a scalable Azure Data Factory pipeline to ingest, clean, and transform customer account data across Bronze–Silver–Gold layers in ADLS and Azure SQL for automated, analytics-ready Power BI reporting.
+        </p>
+        <a href="https://github.com/harpalvaghela/DE-Project-1" target="_blank" class="project-arrow">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px;">
+      <div style="flex:1; min-width:350px;">
+        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-2/main/ETLWorkflow.png" alt="Project 2" style="width:100%; border-radius:12px;">
+      </div>
+      <div style="flex:1; min-width:350px;">
+        <p style="color:#b3b3b3; font-size:14px; margin-bottom:10px;">Data Analytics</p>
+        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Transactions and Loan Data Pipeline</h3>
+        <p style="color:#ccc; font-size:16px; line-height:1.6; margin-bottom:25px;">
+          Built a scalable Azure Databricks + Delta Lake pipeline for daily transactional & loan data processing with SCD logic and real-time analytics via Power BI.
+        </p>
+        <a href="https://github.com/harpalvaghela/DE-Project-2" target="_blank" class="project-arrow">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:350px;">
+        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-04/main/ETL_Flow.png" alt="Project 3" style="width:100%; border-radius:12px;">
+      </div>
+      <div style="flex:1; min-width:350px;">
+        <p style="color:#b3b3b3; font-size:14px; margin-bottom:10px;">Microsoft Fabric</p>
+        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Fabric Data Pipeline</h3>
+        <p style="color:#ccc; font-size:16px; line-height:1.6; margin-bottom:25px;">
+          Built a Microsoft Fabric pipeline to incrementally ingest on-prem data, apply SCD Type 1 transformations, model sales data into Lakehouse fact/dimension tables, and deliver Power BI-ready insights with automated email notifications.
+        </p>
+        <a href="https://github.com/harpalvaghela/DE-Project-04" target="_blank" class="project-arrow">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section HTML -->
+<div class="certification-section" style="margin-top: 50px;">
+  <div class="certification-header">
+    <div class="icon-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58 -7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58 -20.41-20.78-18.47-17.36-25.95-45.75 -3.72-14.14-14.58-25.19-28.47-28.98 -27.88-7.61-24.52-5.62-44.95-26.41 -10.17-10.35-25-14.4-38.89-10.61 -27.87 7.6-23.98 7.61-51.9 0 -13.89-3.79-28.72.25-38.89 10.61 -20.41 20.78-17.05 18.8-44.94 26.41 -13.89 3.79-24.75 14.84-28.47 28.98 -7.47 28.39-5.54 24.97-25.95 45.75 -10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82 -3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98 C104.6 325.96 106.27 325 121 340 c13.23 13.47 33.84 15.88 49.74 5.82 a39.676 39.676 0 0 1 42.53 0 c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z" />
+      </svg>
+    </div>
+    <div class="certification-title">My Certifications</div>
+  </div>
+  <div class="certification-list">
+    <div class="certification-item">Microsoft Certified: Fabric Data Engineer Associate</div>
+    <div class="certification-item">Databricks Certified Data Engineer Associate</div>
+    <div class="certification-item">Microsoft Certified: Fabric Analytics Engineer Associate</div>
+    <div class="certification-item">NLP Practitioner (Nuviscoach)</div>
+    <div class="certification-item">Certified Trainer, IMPT Solution, India</div>
+  </div>
+</div>
+
+<!-- Contact Section HTML -->
+<div class="contact-section">
+  <div class="contact-title">Let’s Talk</div>
+  <p class="contact-desc">
+    Let’s connect and explore how I can help you turn raw data into impactful insights through scalable pipelines and modern data architecture.
+  </p>
+  <a href="https://topmate.io/harpal_vaghela" target="_blank" class="contact-btn">
+    <span>Schedule a Call</span>
+    <i class="fa-solid fa-phone"></i>
+  </a>
+</div>
+
+<!-- Footer -->
+<hr class="divider-line">
+<div class="footer">
+  © 2025 Copyright All Rights Reserved
+</div>
+
 </body>
 </html>
