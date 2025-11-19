@@ -15,6 +15,50 @@
       background-color: #000;
       color: #fff;
     }
+    .btn-primary {
+      display: inline-block;
+      padding: 0.8rem 1.6rem;
+      background: #C7FF00;
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      transition: 0.4s ease;
+    }
+    .btn-primary::before {
+      content: "";
+      position: absolute;
+      left: -100%;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: all 0.5s ease;
+    }
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+    .btn-primary:hover {
+      transform: translateY(-4px);
+    }
+    .divider-line {
+      border: none;
+      height: 1px;
+      background-color: #ffffff !important;
+      opacity: 0.2;
+      margin: 40px auto 20px;
+      width: 100%;
+    }
+    .footer {
+      background-color: #111111 !important;
+      color: #ffffff !important;
+      text-align: center;
+      font-size: 14px;
+      padding: 15px 20px;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
@@ -96,9 +140,7 @@
     <div class="text-col">
       <span class="section-label">About Me</span>
       <h2 class="heading">
-        <span style="color: #ffffff;">Innovative</span>
-        <span class="highlight">Data Engineer</span>
-        <span style="color: #ffffff;">with a Strategic Vision</span>
+        Innovative <span class="highlight">Data Engineer</span> with a Strategic Vision
       </h2>
       <p class="intro">
         I am a passionate Data Engineer, designing scalable data pipelines and modern lakehouse architectures that convert raw data into actionable business value and intelligent decision making.
@@ -163,7 +205,6 @@
   .timeline-box p { margin: 0; color: #aaa; }
   .timeline-date { font-size: 14px; color: #888; margin-bottom: 5px; }
 
-  /* Skills Section */
   .skills-section { background:#1F1F1F; padding:20px 20px; border-radius:20px; max-width:1200px; margin:0 auto; color:#fff; }
   .skills-section h2 { text-align:center; font-size:28px; font-weight:700; margin:0 0 0px 0; padding:20px; background:#1F1F1F; border-radius:20px; }
   .skills-section h2 span:nth-child(1) { color:#ffffff; }
@@ -175,7 +216,6 @@
   .skill-list li { display:flex; align-items:center; background:#2a2a2a; padding:10px 15px; border-radius:8px; }
   .skill-list img { width:24px; height:24px; margin-right:10px; }
 
-  /* Blog Section */
   .blog-section {
     background-color: #1F1F1F;
     color: white;
@@ -192,32 +232,6 @@
   .blog-header .icon-wrapper i { color: #ccff00; font-size: 20px; }
   .blog-title { font-size: 28px; font-weight: 700; color: #fff; }
   .blog-description { font-size: 16px; margin-bottom: 25px; color: #ccc; max-width: 700px; margin-left: auto; margin-right: auto; }
-  .btn-primary {
-    display: inline-block;
-    padding: 0.8rem 1.6rem;
-    background: #C7FF00;
-    color: #000;
-    font-weight: bold;
-    border-radius: 30px;
-    position: relative;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.4s ease;
-  }
-  .btn-primary::before {
-    content: "";
-    position: absolute;
-    left: -100%;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-    transition: all 0.5s ease;
-  }
-  .btn-primary:hover::before { left: 100%; }
-  .btn-primary:hover { transform: translateY(-4px); }
-
-  /* Projects Section */
   .project-section {
     background:#121312;
     padding:80px 0;
@@ -248,8 +262,6 @@
     border-color: #ccff00;
     transform: scale(1.08);
   }
-
-  /* Certification Section */
   .certification-section {
     background-color: #1F1F1F;
     color: white;
@@ -262,9 +274,7 @@
   .certification-header .icon-wrapper {
     width: 48px; height: 48px; background-color: #0a0a0a; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; box-shadow: 0 0 0 2px #111;
   }
-  .certification-header .icon-wrapper svg {
-    fill: #ccff00; width: 20px; height: 20px;
-  }
+  .certification-header .icon-wrapper svg { fill: #ccff00; width: 20px; height: 20px; }
   .certification-title { font-size: 28px; font-weight: 700; color: #fff; }
   .certification-list { display: flex; flex-direction: column; gap: 20px; align-items: center; }
   .certification-item {
@@ -282,7 +292,6 @@
   }
   .certification-item:hover { transform: scale(1.02); background-color: #333; }
 
-  /* Contact Section */
   .contact-section {
     background-color: #121312;
     color: white;
@@ -320,262 +329,4 @@
   .contact-btn:hover::after { width: 100%; }
   .contact-btn:hover span { opacity: 0; transform: translateY(-8px); }
   .contact-btn:hover i { opacity: 1; transform: translateY(0); }
-  .divider-line {
-    border: none;
-    height: 1px;
-    background-color: #ffffff !important;
-    opacity: 0.2;
-    margin: 40px auto 20px;
-    width: 100%;
-  }
-  .footer {
-    background-color: #111111 !important;
-    color: #ffffff !important;
-    text-align: center;
-    font-size: 14px;
-    padding: 15px 20px;
-    font-weight: 500;
-  }
-</style>
-
-<div class="timeline-section">
-  <div class="timeline-inner">
-    <!-- Education -->
-    <div class="timeline-column">
-      <div class="timeline-title">
-        <div class="icon-wrapper"><i class="fas fa-graduation-cap"></i></div>
-        Education
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2023 – 2024</div>
-        <h4>Durham College, Canada</h4>
-        <p>AI Analysis, Design &amp; Implementationn</p>
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2022 – 2023</div>
-        <h4>Durham College, Canada</h4>
-        <p>Data Analytics for Business Decision Making</p>
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2015 – 2019</div>
-        <h4>GTU, India</h4>
-        <p>B.E. Computer Engineering</p>
-      </div>
-    </div>
-    <!-- Experience -->
-    <div class="timeline-column">
-      <div class="timeline-title">
-        <div class="icon-wrapper"><i class="fas fa-briefcase"></i></div>
-        Experience
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2024 – 2025</div>
-        <h4>Data Engineer</h4>
-        <p>Scotiabank, Canada</p>
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2022 – 2022</div>
-        <h4>MS Associate System Analyst</h4>
-        <p>Altera Digital Health, India</p>
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2021 – 2022</div>
-        <h4>Data Engineer</h4>
-        <p>Thoughtpearls Softwares, India</p>
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2019 – 2021</div>
-        <h4>Jr. Data Engineer</h4>
-        <p>P5Infosoft, India</p>
-      </div>
-    </div>
-    <!-- Leadership -->
-    <div class="timeline-column">
-      <div class="timeline-title">
-        <div class="icon-wrapper"><i class="fas fa-users"></i></div>
-        Leadership
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2020 – Present</div>
-        <h4>Founder</h4>
-        <p>The Executors’ Club</p>
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2015-2019</div>
-        <h4>ROBOCON, Team Member</h4>
-        <p>Robotics Club, VIER</p>
-      </div>
-      <div class="timeline-box">
-        <div class="timeline-circle"></div>
-        <div class="timeline-date">2020 – 2021</div>
-        <h4>Social Media, Director</h4>
-        <p>JCI VSN, Vadodara</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Skills Section HTML -->
-<section class="skills-section">
-  <h2>
-    <span>My </span><span>Skill Set</span>
-  </h2>
-  <div class="skills-container">
-    <div class="skill-category">
-      <h3>Programming Languages</h3>
-      <ul class="skill-list">
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> Python</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg"> PySpark</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"> Java</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"> Kotlin</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <h3>Databases</h3>
-      <ul class="skill-list">
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"> Azure SQL DB</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> MySQL</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"> SQL Server</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"> PostgreSQL</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <h3>Cloud Tools</h3>
-      <ul class="skill-list">
-        <li><img src="https://code.benco.io/icon-collection/azure-icons/Data-Factory.svg"> Azure Data Factory</li>
-        <li style="display:flex;align-items:center;gap:5px;">
-          <img src="https://code.benco.io/icon-collection/azure-icons/Azure-Synapse-Analytics.svg"> Azure Synapse Analytics
-        </li>
-        <li><img src="https://static.wikia.nocookie.net/logopedia/images/a/aa/Microsoft_Fabric_2023.svg"> Microsoft Fabric</li>
-        <li><img src="https://cdn.brandfetch.io/idSUrLOWbH/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"> Databricks</li>
-        <li><img src="https://registry.npmmirror.com/@lobehub/icons-static-png/1.74.0/files/light/snowflake-color.png"> Snowflake</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <h3>Other Tech Skills</h3>
-      <ul class="skill-list">
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"> Git</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"> GitHub</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"> BitBucket</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"> Jira</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg"> Confluence</li>
-        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"> VSCode</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Blog Section HTML -->
-<div class="blog-section">
-  <div class="blog-header">
-    <div class="icon-wrapper"><i class="fa-brands fa-medium"></i></div>
-    <div class="blog-title">My Blogs</div>
-  </div>
-  <p class="blog-description">
-    Explore my latest blogs by clicking the button below and dive into a range of topics on my Medium account. Stay informed, inspired, and connected!
-  </p>
-  <a href="https://medium.com/@harpalvaghela" target="_blank" class="btn-primary">Read My Blogs</a>
-</div>
-
-<!-- Projects Section HTML -->
-<section class="project-section">
-  <div style="max-width:1200px; margin:0 auto; padding:0 30px;">
-    <h2 style="font-size:36px; font-weight:500; margin-bottom:60px; text-align:center; color:#fff;">
-      Explore My Popular <span style="color:#ccff00;">Projects</span>
-    </h2>
-    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px;">
-      <div style="flex:1; min-width:350px;">
-        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-1/main/ETLWorkflow.png" alt="Data Project" style="width:100%; border-radius:12px;">
-      </div>
-      <div style="flex:1; min-width:350px;">
-        <p style="color:#b3b3b3; font-size:14px; margin-bottom:10px;">Data Engineering</p>
-        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Data Pipeline for Customer Account Analysis</h3>
-        <p style="color:#ccc; font-size:16px; line-height:1.6; margin-bottom:25px;">
-          Built a scalable Azure Data Factory pipeline to ingest, clean, and transform customer account data across Bronze–Silver–Gold layers in ADLS and Azure SQL for automated, analytics-ready Power BI reporting.
-        </p>
-        <a href="https://github.com/harpalvaghela/DE-Project-1" target="_blank" class="project-arrow">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </div>
-    </div>
-    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px;">
-      <div style="flex:1; min-width:350px;">
-        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-2/main/ETLWorkflow.png" alt="Project 2" style="width:100%; border-radius:12px;">
-      </div>
-      <div style="flex:1; min-width:350px;">
-        <p style="color:#b3b3b3; font-size:14px; margin-bottom:10px;">Data Analytics</p>
-        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Transactions and Loan Data Pipeline</h3>
-        <p style="color:#ccc; font-size:16px; line-height:1.6; margin-bottom:25px;">
-          Built a scalable Azure Databricks + Delta Lake pipeline for daily transactional & loan data processing with SCD logic and real-time analytics via Power BI.
-        </p>
-        <a href="https://github.com/harpalvaghela/DE-Project-2" target="_blank" class="project-arrow">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </div>
-    </div>
-    <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap;">
-      <div style="flex:1; min-width:350px;">
-        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-04/main/ETL_Flow.png" alt="Project 3" style="width:100%; border-radius:12px;">
-      </div>
-      <div style="flex:1; min-width:350px;">
-        <p style="color:#b3b3b3; font-size:14px; margin-bottom:10px;">Microsoft Fabric</p>
-        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Fabric Data Pipeline</h3>
-        <p style="color:#ccc; font-size:16px; line-height:1.6; margin-bottom:25px;">
-          Built a Microsoft Fabric pipeline to incrementally ingest on-prem data, apply SCD Type 1 transformations, model sales data into Lakehouse fact/dimension tables, and deliver Power BI-ready insights with automated email notifications.
-        </p>
-        <a href="https://github.com/harpalvaghela/DE-Project-04" target="_blank" class="project-arrow">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Certifications Section HTML -->
-<div class="certification-section" style="margin-top: 50px;">
-  <div class="certification-header">
-    <div class="icon-wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-        <path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58 -7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58 -20.41-20.78-18.47-17.36-25.95-45.75 -3.72-14.14-14.58-25.19-28.47-28.98 -27.88-7.61-24.52-5.62-44.95-26.41 -10.17-10.35-25-14.4-38.89-10.61 -27.87 7.6-23.98 7.61-51.9 0 -13.89-3.79-28.72.25-38.89 10.61 -20.41 20.78-17.05 18.8-44.94 26.41 -13.89 3.79-24.75 14.84-28.47 28.98 -7.47 28.39-5.54 24.97-25.95 45.75 -10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82 -3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98 C104.6 325.96 106.27 325 121 340 c13.23 13.47 33.84 15.88 49.74 5.82 a39.676 39.676 0 0 1 42.53 0 c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z" />
-      </svg>
-    </div>
-    <div class="certification-title">My Certifications</div>
-  </div>
-  <div class="certification-list">
-    <div class="certification-item">Microsoft Certified: Fabric Data Engineer Associate</div>
-    <div class="certification-item">Databricks Certified Data Engineer Associate</div>
-    <div class="certification-item">Microsoft Certified: Fabric Analytics Engineer Associate</div>
-    <div class="certification-item">NLP Practitioner (Nuviscoach)</div>
-    <div class="certification-item">Certified Trainer, IMPT Solution, India</div>
-  </div>
-</div>
-
-<!-- Contact Section HTML -->
-<div class="contact-section">
-  <div class="contact-title">Let’s Talk</div>
-  <p class="contact-desc">
-    Let’s connect and explore how I can help you turn raw data into impactful insights through scalable pipelines and modern data architecture.
-  </p>
-  <a href="https://topmate.io/harpal_vaghela" target="_blank" class="contact-btn">
-    <span>Schedule a Call</span>
-    <i class="fa-solid fa-phone"></i>
-  </a>
-</div>
-
-<!-- Footer -->
-<hr class="divider-line">
-<div class="footer">
-  © 2025 Copyright All Rights Reserved
-</div>
-
-</body>
-</html>
+}
