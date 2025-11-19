@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio – Harpalsinh Vaghela</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header class="site-header">
@@ -14,13 +16,11 @@
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#leadership">Leadership</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -46,8 +46,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <!-- Placeholder image; replace with your photo (e.g. profile.jpg) -->
-                    <img src="https://via.placeholder.com/350x350" alt="Profile photo" />
+                    <img src="https://github.com/harpalvaghela/harpalvaghela/blob/main/HarpalVaghela_Website1.png?raw=true" alt="Harpalsinh Vaghela" class="about-photo"/>
                 </div>
             </div>
             <div class="stats-container">
@@ -66,250 +65,338 @@
             </div>
         </section>
         <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Me</h2>
-                <h3 class="subheading">Innovative Data Engineer with a Strategic Vision</h3>
-                <p>
-                    I am a passionate Data Engineer, designing scalable data pipelines and modern lakehouse
-                    architectures that convert raw data into actionable business value and intelligent decision making.
-                </p>
-                <ul class="about-list">
-                    <li>Lakehouse Architecture Design</li>
-                    <li>Databricks Development</li>
-                    <li>Azure Synapse &amp; ADF Integration</li>
-                    <li>ETL Development</li>
+        <section id="about" class="about-me-section">
+          <div class="about-me-container">
+            <!-- Text Content -->
+            <div class="text-col">
+              <span class="section-label">About Me</span>
+              <h2 class="heading">
+                <span>Innovative</span>
+                <span class="highlight">Data Engineer</span>
+                <span>with a Strategic Vision</span>
+              </h2>
+              <p class="intro">
+                I am a passionate Data Engineer, designing scalable data pipelines and modern lakehouse architectures
+                that convert raw data into actionable business value and intelligent decision making.
+              </p>
+              <div class="icon-lists">
+                <ul class="icon-list">
+                  <li class="icon-list-item"><span class="tick">✓</span> Lakehouse Architecture Design</li>
+                  <li class="icon-list-item"><span class="tick">✓</span> Databricks Development</li>
                 </ul>
-                <div class="about-contact">
-                    <p><strong>Email:</strong> <a href="mailto:harpalvaghela990@gmail.com">harpalvaghela990@gmail.com</a></p>
-                    <p><strong>Book a Call:</strong> <a href="https://topmate.io/harpal_vaghela" target="_blank" rel="noopener">topmate.io/harpal_vaghela</a></p>
+                <ul class="icon-list">
+                  <li class="icon-list-item"><span class="tick">✓</span> Azure Synapse &amp; ADF Integration</li>
+                  <li class="icon-list-item"><span class="tick">✓</span> ETL Development</li>
+                </ul>
+              </div>
+              <div class="contact-cards">
+                <div class="contact-card">
+                  <span class="contact-label">Email Me</span>
+                  <a href="mailto:harpalvaghela990@gmail.com" class="contact-value">
+                    <i class="fa fa-envelope"></i> harpalvaghela990@gmail.com
+                  </a>
                 </div>
+                <div class="contact-card">
+                  <span class="contact-label">Book a Call</span>
+                  <a href="https://topmate.io/harpal_vaghela" target="_blank" class="contact-value">
+                    <i class="fa fa-phone"></i> topmate.io/harpal_vaghela
+                  </a>
+                </div>
+              </div>
             </div>
+            <!-- Image -->
+            <div class="image-col">
+              <img src="https://github.com/harpalvaghela/harpalvaghela/blob/main/HarpalVaghela_Website1.png?raw=true"
+                   alt="Harpalsinh Vaghela" class="about-photo">
+            </div>
+          </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section section-alt">
-            <div class="container">
-                <h2>Professional Experience</h2>
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline-section fade-in">
+            <div class="timeline-inner">
 
-                <!-- Azure Data Engineer -->
-                <div class="experience-item">
-                    <h3>Azure Data Engineer — Scotiabank</h3>
-                    <span class="experience-duration">May 2024 – Present</span>
-                    <ul>
-                        <li>Designed and automated complex ETL/ELT pipelines using Azure Data Factory and Databricks,
-                            supporting ingestion from on‑prem SQL Server and Azure SQL into a cloud‑based lakehouse.</li>
-                        <li>Developed and maintained dimensional data models (star and snowflake schemas) and fact/dimension tables
-                            to enable enterprise reporting and analytics.</li>
-                        <li>Implemented robust data governance practices, including SCD Type 2, data validation, lineage
-                            tracking and reconciliation workflows to ensure compliance with enterprise standards.</li>
-                        <li>Optimized SQL, Spark SQL and PySpark transformations to improve data pipeline performance by
-                            30 %, reducing SLA breaches.</li>
-                        <li>Built and maintained Delta Lake architecture for scalable storage, supporting both batch and
-                            near‑real‑time analytics.</li>
-                        <li>Integrated with Azure Synapse Analytics and Power BI, reducing dashboard refresh time by 35 %
-                            and enabling data‑driven decision making.</li>
-                        <li>Collaborated with cross‑functional Agile teams and mentored junior developers on coding
-                            standards, reusable frameworks and CI/CD best practices.</li>
-                        <li>Ensured metadata management, data lineage capture and adherence to enterprise RBAC/security
-                            standards to meet governance and compliance requirements.</li>
-                    </ul>
+                <!-- Education Column -->
+                <div class="timeline-column">
+                    <div class="timeline-title">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        Education
+                    </div>
+
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2023 – 2024</div>
+                        <h4>Durham College, Canada</h4>
+                        <p>AI Analysis, Design &amp; Implementation</p>
+                    </div>
+
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2022 – 2023</div>
+                        <h4>Durham College, Canada</h4>
+                        <p>Data Analytics for Business Decision Making</p>
+                    </div>
+
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2015 – 2019</div>
+                        <h4>GTU, India</h4>
+                        <p>B.E. Computer Engineering</p>
+                    </div>
                 </div>
 
-                <!-- MS Associate Systems Analyst -->
-                <div class="experience-item">
-                    <h3>MS Associate Systems Analyst — Altera Digital Health</h3>
-                    <span class="experience-duration">Apr 2022 – Aug 2022</span>
-                    <ul>
-                        <li>Developed ETL pipelines with SSIS and SQL Server, ensuring accurate ingestion of clinical and
-                            operational data for enterprise reporting.</li>
-                        <li>Enhanced data quality and validation by profiling healthcare datasets, reducing reporting errors
-                            and improving regulatory compliance.</li>
-                        <li>Optimized T‑SQL queries and reporting jobs in SSRS, improving performance and saving over 12
-                            hours per week in manual reporting effort.</li>
-                    </ul>
+                <!-- Experience Column -->
+                <div class="timeline-column">
+                    <div class="timeline-title">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        Experience
+                    </div>
+
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2024 – Present</div>
+                        <h4>Data Engineer</h4>
+                        <p>Scotiabank, Canada</p>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2022 – 2022</div>
+                        <h4>MS Associate System Analyst</h4>
+                        <p>Altera Digital Health, India</p>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2021 – 2022</div>
+                        <h4>Data Engineer</h4>
+                        <p>Thoughtpearls Softwares, India</p>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2019 – 2021</div>
+                        <h4>Jr. Data Engineer</h4>
+                        <p>P5Infosoft, India</p>
+                    </div>
                 </div>
 
-                <!-- Data Engineer at Thoughtpearls -->
-                <div class="experience-item">
-                    <h3>Data Engineer — Thoughtpearls Softwares Pvt Ltd</h3>
-                    <span class="experience-duration">Jul 2021 – Jan 2022</span>
-                    <ul>
-                        <li>Designed and deployed Azure Data Factory pipelines to automate ingestion from retail POS
-                            systems, supporting enterprise‑scale reporting across 30 + stores.</li>
-                        <li>Developed lakehouse structures in Azure Data Lake Storage with partitioning and metadata
-                            enrichment to improve performance and governance.</li>
-                        <li>Created ETL workflows in SQL to transform raw data into dimensional models, improving demand
-                            forecasting and sales analytics.</li>
-                        <li>Documented metadata, data lineage and validation rules to support reusability and governance
-                            compliance.</li>
-                    </ul>
-                </div>
+                <!-- Leadership Column -->
+                <div class="timeline-column">
+                    <div class="timeline-title">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        Leadership
+                    </div>
 
-                <!-- Data Engineer at P5Infosoft -->
-                <div class="experience-item">
-                    <h3>Data Engineer — P5Infosoft Pvt Ltd</h3>
-                    <span class="experience-duration">Nov 2019 – Jul 2021</span>
-                    <ul>
-                        <li>Developed and orchestrated Azure Data Factory pipelines to ingest and transform POS
-                            transactions across 50 + stores, ensuring timely sales, inventory and finance reporting.</li>
-                        <li>Modelled data in Azure Synapse Analytics (star and snowflake schemas), enabling analytics
-                            adoption across finance and operations.</li>
-                        <li>Improved processing efficiency by 35 % using Databricks and PySpark, scaling batch jobs for
-                            large historical datasets.</li>
-                        <li>Established monitoring and alerting via Azure Monitor and Log Analytics, reducing pipeline
-                            downtime and incident response times.</li>
-                        <li>Led migration of legacy SQL/SSIS pipelines to Azure cloud‑based solutions, ensuring data
-                            continuity and minimizing business risk.</li>
-                        <li>Worked with business stakeholders to translate reporting requirements into data models,
-                            ETL pipelines and validated outputs.</li>
-                    </ul>
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2020 – Present</div>
+                        <h4>Founder</h4>
+                        <p>The Executors’ Club</p>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2015 – 2019</div>
+                        <h4>ROBOCON, Team Member</h4>
+                        <p>Robotics Club, VIER</p>
+                    </div>
+                    <div class="timeline-box">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-date">2020 – 2021</div>
+                        <h4>Social Media, Director</h4>
+                        <p>JCI VSN, Vadodara</p>
+                    </div>
                 </div>
-
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li><strong>Programming &amp; Scripting:</strong> Python, SQL, PySpark, T‑SQL, Apache Spark</li>
-                    <li><strong>Cloud &amp; Lakehouse Technologies:</strong> Azure (Data Factory, Synapse Analytics, Data
-                        Lake, Databricks), SQL Database, Logic Apps, Microsoft Fabric</li>
-                    <li><strong>ETL, ELT &amp; Pipelines:</strong> Delta Lake, SCD Type 1 &amp; 2, Data Transformation, SSIS,
-                        SSRS</li>
-                    <li><strong>Data Engineering &amp; Modeling:</strong> Data Warehousing, Dimensional Modeling,
-                        DBMS, Dataflows, SDLC</li>
-                    <li><strong>Data Visualization &amp; BI:</strong> Power BI, Advanced MS Excel, Data Modeling</li>
-                    <li><strong>Orchestration &amp; Monitoring:</strong> CI/CD, Azure Log Analytics, Azure CLI, GitHub,
-                        Azure DevOps</li>
-                    <li><strong>Security &amp; Access Management:</strong> Microsoft Entra ID, Unity Catalog, Data
-                        Governance</li>
-                    <li><strong>Collaboration &amp; Other Tools:</strong> Jira, Confluence, MySQL, PostgreSQL, Oracle</li>
-                    <li><strong>Data Quality &amp; Governance:</strong> Data Profiling, Data Lineage, Metadata
-                        Management</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="section section-alt">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>PG Diploma in AI Analysis, Design and Implementation — Durham College, Canada</h3>
-                    <span class="education-duration">2023 – 2024 &nbsp;|&nbsp; GPA 4.46/5</span>
-                    <p>Coursework: Azure, Python, Machine Learning, Microsoft Co‑pilot, Applied Maths, AWS, GCP.</p>
+        <section id="skills" class="skills-section fade-in">
+            <h2 style="text-align:center; font-size:28px; font-weight:700; margin:0 0 0px 0; padding:20px;">
+                <span>My </span>
+                <span class="highlight" style="color: var(--accent);">Skill Set</span>
+            </h2>
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> Python</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg"> PySpark</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"> Java</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"> Kotlin</li>
+                    </ul>
                 </div>
-                <div class="education-item">
-                    <h3>PG Diploma in Data Analytics for Business Decision Making — Durham College, Canada</h3>
-                    <span class="education-duration">2022 – 2023 &nbsp;|&nbsp; GPA 4.69/5</span>
-                    <p>Coursework: Python, R Studio, Tableau, Power BI, GitHub, Story Telling, Presentation Skills,
-                        Apache Kafka.</p>
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul class="skill-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"> Azure SQL DB</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> MySQL</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"> SQL Server</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"> PostgreSQL</li>
+                    </ul>
                 </div>
-                <div class="education-item">
-                    <h3>Bachelor of Engineering in Computer Engineering — Gujarat Technological University, India</h3>
-                    <span class="education-duration">2015 – 2019 &nbsp;|&nbsp; CGPA 9.04/10</span>
+                <!-- Cloud Tools -->
+                <div class="skill-category">
+                    <h3>Cloud Tools</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-database"></i> Azure Data Factory</li>
+                        <li><i class="fa-solid fa-code-branch"></i> Azure Synapse Analytics</li>
+                        <li><i class="fa-brands fa-microsoft"></i> Microsoft Fabric</li>
+                        <li><i class="fa-solid fa-cube"></i> Databricks</li>
+                        <li><i class="fa-solid fa-snowflake"></i> Snowflake</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="section">
-            <div class="container">
-                <h2>Certifications</h2>
-                <ul class="certifications-list">
-                    <li>Certified Databricks Data Engineer Associate (Databricks)</li>
-                    <li>DP 700 – Fabric Data Engineer Associate &amp; DP 600 – Fabric Data Analytics Associate (Microsoft)</li>
-                    <li>DP 900 – Azure Data Fundamentals (Microsoft)</li>
-                    <li>NLP Practitioner (Nuviscoach)</li>
-                    <li>Certified Trainer – I.M. Possible Training Solution, India</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Leadership Section -->
-        <section id="leadership" class="section section-alt">
-            <div class="container">
-                <h2>Leadership &amp; Activities</h2>
-                <div class="leadership-item">
-                    <h3>Founder – The Executors’ Club</h3>
-                    <p>
-                        Initiated and led a 21‑day self‑transformation program across nine successful cohorts,
-                        fostering a community focused on productivity, confidence and personal growth.
-                    </p>
-                </div>
-                <div class="leadership-item">
-                    <h3>Team Lead – ROBOCON, GTU</h3>
-                    <p>
-                        Demonstrated advanced teamwork, innovation and hands‑on problem solving by leading robotics PCB design
-                        and system integration in national‑level competitions.
-                    </p>
+                <!-- Other Tech Tools -->
+                <div class="skill-category">
+                    <h3>Other Tech Skills</h3>
+                    <ul class="skill-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"> Git</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"> GitHub</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"> BitBucket</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"> Jira</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg"> Confluence</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"> VSCode</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="project-item">
-                    <h3>Data Pipeline for Customer Account Analysis</h3>
-                    <p>
-                        Built a scalable Azure Data Factory pipeline to ingest, clean and transform customer account
-                        data across bronze–silver–gold layers in ADLS and Azure SQL for automated, analytics‑ready Power BI
-                        reporting.
-                    </p>
+        <section id="projects" class="project-section fade-in">
+            <div style="max-width:1200px; margin:0 auto; padding:0 30px;">
+                <h2 style="font-size:36px; font-weight:500; margin-bottom:60px; text-align:center;">
+                    Explore My Popular <span class="highlight" style="color: var(--accent);">Projects</span>
+                </h2>
+                <!-- Project 1 -->
+                <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px;">
+                    <div style="flex:1; min-width:350px;">
+                        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-1/main/ETLWorkflow.png" alt="Data Project" style="width:100%; border-radius:12px;">
+                    </div>
+                    <div style="flex:1; min-width:350px;">
+                        <p style="color: var(--text-secondary); font-size:14px; margin-bottom:10px;">Data Engineering</p>
+                        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Data Pipeline for Customer Account Analysis</h3>
+                        <p style="color: var(--text-secondary); font-size:16px; line-height:1.6; margin-bottom:25px;">
+                            Built a scalable Azure Data Factory pipeline to ingest, clean, and transform customer account data across Bronze–Silver–Gold layers in ADLS and Azure SQL for automated, analytics-ready Power BI reporting.
+                        </p>
+                        <a href="https://github.com/harpalvaghela/DE-Project-1" target="_blank" class="project-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="project-item">
-                    <h3>Transactions and Loan Data Pipeline</h3>
-                    <p>
-                        Developed an Azure Databricks + Delta Lake pipeline for daily transactional and loan data
-                        processing with SCD logic and real‑time analytics via Power BI.
-                    </p>
+                <!-- Project 2 -->
+                <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap; margin-bottom:80px;">
+                    <div style="flex:1; min-width:350px;">
+                        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-2/main/ETLWorkflow.png" alt="Project 2" style="width:100%; border-radius:12px;">
+                    </div>
+                    <div style="flex:1; min-width:350px;">
+                        <p style="color: var(--text-secondary); font-size:14px; margin-bottom:10px;">Data Analytics</p>
+                        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Transactions and Loan Data Pipeline</h3>
+                        <p style="color: var(--text-secondary); font-size:16px; line-height:1.6; margin-bottom:25px;">
+                            Built a scalable Azure Databricks + Delta Lake pipeline for daily transactional &amp; loan data processing with SCD logic and real-time analytics via Power BI.
+                        </p>
+                        <a href="https://github.com/harpalvaghela/DE-Project-2" target="_blank" class="project-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="project-item">
-                    <h3>Fabric Data Pipeline</h3>
-                    <p>
-                        Implemented a Microsoft Fabric pipeline to incrementally ingest on‑prem data, apply SCD
-                        transformations and model sales data into lakehouse fact/dimension tables, delivering
-                        Power BI‑ready insights with automated email notifications.
-                    </p>
+                <!-- Project 3 -->
+                <div style="display:flex; align-items:center; gap:50px; flex-wrap:wrap;">
+                    <div style="flex:1; min-width:350px;">
+                        <img src="https://raw.githubusercontent.com/harpalvaghela/DE-Project-04/main/ETL_Flow.png" alt="Project 3" style="width:100%; border-radius:12px;">
+                    </div>
+                    <div style="flex:1; min-width:350px;">
+                        <p style="color: var(--text-secondary); font-size:14px; margin-bottom:10px;">Microsoft Fabric</p>
+                        <h3 style="font-size:28px; font-weight:700; margin-bottom:15px;">Fabric Data Pipeline</h3>
+                        <p style="color: var(--text-secondary); font-size:16px; line-height:1.6; margin-bottom:25px;">
+                            Built a Microsoft Fabric pipeline to incrementally ingest on-prem data, apply SCD Type 1 transformations, model sales data into Lakehouse fact/dimension tables, and deliver Power BI-ready insights with automated email notifications.
+                        </p>
+                        <a href="https://github.com/harpalvaghela/DE-Project-04" target="_blank" class="project-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Blogs Section -->
-        <section id="blogs" class="section section-alt">
-            <div class="container">
-                <h2>Blogs</h2>
-                <p>Explore my latest blogs by clicking the button below and dive into a range of topics on my
-                    Medium account. Stay informed, inspired and connected!</p>
-                <a href="https://medium.com/@harpalvaghela" target="_blank" rel="noopener" class="btn primary-btn">Read My Blogs</a>
+        <section id="blogs" class="blog-section fade-in">
+            <div class="blog-header">
+                <div class="icon-wrapper">
+                    <i class="fa-brands fa-medium"></i>
+                </div>
+                <div class="blog-title">My Blogs</div>
             </div>
+            <p class="blog-description">
+                Explore my latest blogs by clicking the button below and dive into a range of topics on my Medium account. Stay informed, inspired, and connected!
+            </p>
+            <a href="https://medium.com/@harpalvaghela" target="_blank" class="btn-primary">Read My Blogs</a>
         </section>
 
-        <!-- Call To Action Section -->
-        <section id="cta" class="section">
-            <div class="container">
-                <h2>Let’s Talk</h2>
-                <p>Let’s connect and explore how I can help you turn raw data into impactful insights through scalable
-                    pipelines and modern data architecture.</p>
-                <a href="https://topmate.io/harpal_vaghela" target="_blank" rel="noopener" class="btn primary-btn">Schedule a Call</a>
+        <!-- Certifications Section -->
+        <section id="certifications" class="certification-section fade-in">
+            <div class="certification-header">
+                <div class="icon-wrapper">
+                    <!-- icon using inline svg for certification -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 
+        448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 
+        26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 
+        9.58-19.5 0-37.82-7.59-51.61-21.37zM263 
+        340c15.28-15.55 17.03-14.21 38.79-20.14 
+        13.89-3.79 24.75-14.84 28.47-28.98 
+        7.48-28.4 5.54-24.97 25.95-45.75 
+        10.17-10.35 14.14-25.44 10.42-39.58 
+        -7.47-28.38-7.48-24.42 0-52.83 
+        3.72-14.14-.25-29.23-10.42-39.58 
+        -20.41-20.78-18.47-17.36-25.95-45.75 
+        -3.72-14.14-14.58-25.19-28.47-28.98 
+        -27.88-7.61-24.52-5.62-44.95-26.41 
+        -10.17-10.35-25-14.4-38.89-10.61 
+        -27.87 7.6-23.98 7.61-51.9 0 
+        -13.89-3.79-28.72.25-38.89 10.61 
+        -20.41 20.78-17.05 18.8-44.94 26.41 
+        -13.89 3.79-24.75 14.84-28.47 28.98 
+        -7.47 28.39-5.54 24.97-25.95 45.75 
+        -10.17 10.35-14.15 25.44-10.42 39.58 
+        7.47 28.36 7.48 24.4 0 52.82 
+        -3.72 14.14.25 29.23 10.42 39.59 
+        20.41 20.78 18.47 17.35 25.95 45.75 
+        3.72 14.14 14.58 25.19 28.47 28.98 
+        C104.6 325.96 106.27 325 121 340 
+        c13.23 13.47 33.84 15.88 49.74 5.82 
+        a39.676 39.676 0 0 1 42.53 0 
+        c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 
+        175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 
+        96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z" />
+                    </svg>
+                </div>
+                <div class="certification-title">My Certifications</div>
+            </div>
+            <div class="certification-list">
+                <div class="certification-item">Microsoft Certified: Fabric Data Engineer Associate</div>
+                <div class="certification-item">Databricks Certified Data Engineer Associate</div>
+                <div class="certification-item">Microsoft Certified: Fabric Analytics Engineer Associate</div>
+                <div class="certification-item">NLP Practitioner (Nuviscoach)</div>
+                <div class="certification-item">Certified Trainer, IMPT Solution, India</div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Feel free to reach out to me via email or through my social channels.</p>
-                <ul class="contact-list">
-                    <li>Email: <a href="mailto:harpalvaghela990@gmail.com">harpalvaghela990@gmail.com</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/harpalsinh-vaghela" target="_blank" rel="noopener">linkedin.com/in/harpalsinh-vaghela</a></li>
-                    <li>GitHub: <a href="https://github.com/harpalvaghela" target="_blank" rel="noopener">github.com/harpalvaghela</a></li>
-                </ul>
+        <section id="contact" class="contact-section fade-in">
+            <div class="contact-container">
+                <div class="contact-title">Let’s Talk</div>
+                <p class="contact-desc">
+                    Let’s connect and explore how I can help you turn raw data into impactful insights through scalable pipelines and modern data architecture.
+                </p>
+                <a href="https://topmate.io/harpal_vaghela" target="_blank" class="contact-btn">
+                    <span>Schedule a Call</span>
+                    <i class="fa-solid fa-phone"></i>
+                </a>
             </div>
         </section>
     </main>
