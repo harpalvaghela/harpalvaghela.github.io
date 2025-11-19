@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – Your Name</title>
+    <title>Portfolio – Harpalsinh Vaghela</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container">
-            <!-- Replace Your Name with your actual name -->
-            <h1 class="site-title">Your Name</h1>
+            <h1 class="site-title">Harpalsinh Vaghela</h1>
             <nav class="site-nav">
                 <ul>
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -26,19 +28,62 @@
     </header>
     
     <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <p class="hero-intro">Hello, I’m</p>
+                    <h1 class="hero-name">Harpalsinh Vaghela</h1>
+                    <h2 class="hero-role">Data Engineer</h2>
+                    <p class="hero-description">
+                        I’m a Data Engineer with hands‑on experience in building end‑to‑end data pipelines and
+                        lakehouse architectures using Azure Data Factory, Synapse Analytics and Databricks. From
+                        ingestion to transformation to insights, I specialize in making data work smarter for
+                        businesses.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-light">Let’s Connect</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder image; replace with your photo (e.g. profile.jpg) -->
+                    <img src="https://via.placeholder.com/350x350" alt="Profile photo" />
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </section>
         <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
                 <h2>About Me</h2>
+                <h3 class="subheading">Innovative Data Engineer with a Strategic Vision</h3>
                 <p>
-                    Results‑driven Data Engineer with over four years of experience designing and deploying scalable,
-                    cloud‑native ETL/ELT pipelines on the Azure platform using Azure Data Factory, Databricks and
-                    Delta Lake. Skilled in developing data warehousing solutions with Azure Synapse Analytics, writing
-                    SQL transformations and enforcing data security with RBAC and Azure Key Vault. Experienced in
-                    monitoring pipelines using Azure Monitor and Log Analytics, and proficient in Power BI and automated
-                    business reporting. An effective collaborator with cross‑functional teams, driving enterprise cloud
-                    data integration and transformation.
+                    I am a passionate Data Engineer, designing scalable data pipelines and modern lakehouse
+                    architectures that convert raw data into actionable business value and intelligent decision making.
                 </p>
+                <ul class="about-list">
+                    <li>Lakehouse Architecture Design</li>
+                    <li>Databricks Development</li>
+                    <li>Azure Synapse &amp; ADF Integration</li>
+                    <li>ETL Development</li>
+                </ul>
+                <div class="about-contact">
+                    <p><strong>Email:</strong> <a href="mailto:harpalvaghela990@gmail.com">harpalvaghela990@gmail.com</a></p>
+                    <p><strong>Book a Call:</strong> <a href="https://topmate.io/harpal_vaghela" target="_blank" rel="noopener">topmate.io/harpal_vaghela</a></p>
+                </div>
             </div>
         </section>
 
@@ -205,15 +250,65 @@
             </div>
         </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-item">
+                    <h3>Data Pipeline for Customer Account Analysis</h3>
+                    <p>
+                        Built a scalable Azure Data Factory pipeline to ingest, clean and transform customer account
+                        data across bronze–silver–gold layers in ADLS and Azure SQL for automated, analytics‑ready Power BI
+                        reporting.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3>Transactions and Loan Data Pipeline</h3>
+                    <p>
+                        Developed an Azure Databricks + Delta Lake pipeline for daily transactional and loan data
+                        processing with SCD logic and real‑time analytics via Power BI.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3>Fabric Data Pipeline</h3>
+                    <p>
+                        Implemented a Microsoft Fabric pipeline to incrementally ingest on‑prem data, apply SCD
+                        transformations and model sales data into lakehouse fact/dimension tables, delivering
+                        Power BI‑ready insights with automated email notifications.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section id="blogs" class="section section-alt">
+            <div class="container">
+                <h2>Blogs</h2>
+                <p>Explore my latest blogs by clicking the button below and dive into a range of topics on my
+                    Medium account. Stay informed, inspired and connected!</p>
+                <a href="https://medium.com/@harpalvaghela" target="_blank" rel="noopener" class="btn primary-btn">Read My Blogs</a>
+            </div>
+        </section>
+
+        <!-- Call To Action Section -->
+        <section id="cta" class="section">
+            <div class="container">
+                <h2>Let’s Talk</h2>
+                <p>Let’s connect and explore how I can help you turn raw data into impactful insights through scalable
+                    pipelines and modern data architecture.</p>
+                <a href="https://topmate.io/harpal_vaghela" target="_blank" rel="noopener" class="btn primary-btn">Schedule a Call</a>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact</h2>
-                <p>Feel free to reach out to me via email or through my social media channels.</p>
+                <p>Feel free to reach out to me via email or through my social channels.</p>
                 <ul class="contact-list">
-                    <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                    <li>LinkedIn: <a href="#">LinkedIn Profile</a></li>
-                    <li>GitHub: <a href="#">GitHub Profile</a></li>
+                    <li>Email: <a href="mailto:harpalvaghela990@gmail.com">harpalvaghela990@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/harpalsinh-vaghela" target="_blank" rel="noopener">linkedin.com/in/harpalsinh-vaghela</a></li>
+                    <li>GitHub: <a href="https://github.com/harpalvaghela" target="_blank" rel="noopener">github.com/harpalvaghela</a></li>
                 </ul>
             </div>
         </section>
@@ -221,7 +316,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+            <p>© <span id="year"></span> Harpalsinh Vaghela. All rights reserved.</p>
         </div>
         <script>
             // Automatically update the year in the footer

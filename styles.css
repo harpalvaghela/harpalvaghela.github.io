@@ -12,6 +12,197 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    color: #fff !important;
+    background-color: #0d6efd;
+}
+
+.primary-btn {
+    background-color: #0d6efd;
+    color: #fff !important;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #0b5ed7;
+    text-decoration: none;
+}
+
+/* Light button variant for dark backgrounds */
+.btn-light {
+    background-color: #fff;
+    color: #0d6efd !important;
+}
+
+.btn-light:hover {
+    background-color: #e9ecef;
+}
+
+/* Hero section */
+.hero-section {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 4rem 0 2rem;
+    text-align: left;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1 1 55%;
+}
+
+.hero-image {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero-intro {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.hero-name {
+    font-size: 2.5rem;
+    margin: 0.2rem 0;
+    color: #fff;
+}
+
+.hero-role {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #dbe4ff;
+}
+
+.hero-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.hero-actions {
+    margin-top: 1rem;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    background-color: #e9ecef;
+    color: #212529;
+    padding: 1rem 0;
+}
+
+.stat-item {
+    flex: 1 1 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+/* About section */
+.subheading {
+    font-size: 1.25rem;
+    color: #0d6efd;
+    margin-bottom: 0.5rem;
+}
+
+.about-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding-left: 0;
+}
+
+.about-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-list li::before {
+    content: '\2713'; /* check mark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.about-contact p {
+    margin-bottom: 0.5rem;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 1.5rem;
+}
+
+.project-item h3 {
+    margin-bottom: 0.3rem;
+    color: #0d6efd;
+}
+
+/* Blogs section */
+#blogs {
+    text-align: center;
+}
+
+/* CTA section */
+#cta {
+    text-align: center;
+}
+
+/* Stats and hero responsive */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .hero-image {
+        flex: 1 1 100%;
+    }
+    .stats-container {
+        flex-direction: column;
+    }
+    .stat-item {
+        margin-bottom: 1rem;
+    }
+}
+
 h1, h2, h3 {
     font-weight: 600;
     margin-bottom: 0.5rem;
